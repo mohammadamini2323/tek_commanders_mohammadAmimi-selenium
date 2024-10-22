@@ -8,7 +8,7 @@ public class firstACTIVITI {
     public static void main(String[] args) {
 
         ChromeDriver cdriver = new ChromeDriver();
-        cdriver.get("https://retail.tekschool-students.com/");
+        cdriver.get("https://retail.tekschool-students.com/");can
         cdriver.manage().window().maximize();
         By signINid = By.id("signinLink");
         WebElement signInELEMENT = cdriver.findElement(signINid);
