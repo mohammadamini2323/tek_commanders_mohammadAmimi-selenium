@@ -4,21 +4,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class firstACTIVITI {
+public class thirdActivity {
     public static void main(String[] args) {
 
         ChromeDriver cdriver = new ChromeDriver();
         cdriver.get("https://retail.tekschool-students.com/");
         cdriver.manage().window().maximize();
-        By signINid = By.id("signinLink");
-        WebElement signInELEMENT = cdriver.findElement(signINid);
-        signInELEMENT.click();
-        By creatAcountId=By.id("newAccountBtn");
-        WebElement creatAccount=cdriver.findElement(creatAcountId);
-        creatAccount.click();
-        // Thread.sleep(2000);
-        cdriver.close();
+        By classnamet=By.className("top-nav__logo active");
+        WebElement TEXTELEMENT=  cdriver.findElement(classnamet);
+        String TEXT =TEXTELEMENT.getText();
+        System.out.println(TEXT);
+
+
         cdriver.quit();
     }
-
 }

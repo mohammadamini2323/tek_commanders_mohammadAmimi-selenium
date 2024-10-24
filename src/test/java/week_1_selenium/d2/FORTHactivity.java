@@ -9,7 +9,7 @@ public class FORTHactivity { public static void main(String[] args) {
     driver.get("https://www.bbc.com/");
     By linkB=new By.ByLinkText("Business");
     driver.findElement(linkB).click();
-    By TITLECLASS=new By.ByClassName("sc-66cb3400-2 juQBdA");
+    By TITLECLASS=new By.ByClassName("sc-66cb3400-2");
    String TITLEtext =driver.findElement(TITLECLASS).getText();
     System.out.println(TITLEtext);
     driver.quit();
