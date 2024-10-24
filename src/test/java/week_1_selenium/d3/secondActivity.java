@@ -8,7 +8,7 @@ public class secondActivity {
     public static void main(String[] args) {
         ChromeDriver driver=new ChromeDriver();
         driver.get("https://retail.tekschool-students.com/");
-        By videoGameLocator=By.xpath("/html/body/div/div/div/div[3]/div/div[2]/div/div/div/div/div[2]/p");
+        By videoGameLocator=By.xpath("/html/body/div/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div/div/div[2]/p");
         driver.findElement(videoGameLocator).click();
         By PS5locator=By.xpath("/html/body/div/div/div/div[3]/div/div/img");
         driver.findElement(PS5locator).click();
