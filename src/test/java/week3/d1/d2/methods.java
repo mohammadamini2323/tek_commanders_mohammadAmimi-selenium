@@ -7,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.edge.EdgeDriver;
 
 public class methods {
-   // public static void createDriver(){
        public final static WebDriver chromeDriver=new ChromeDriver();
       // public final static WebDriver edgeDriver=new EdgeDriver();
        public final static String oldRetailApp="https://retail.tekschool-students.com/";
