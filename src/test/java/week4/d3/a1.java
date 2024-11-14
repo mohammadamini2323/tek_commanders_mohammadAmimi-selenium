@@ -40,7 +40,7 @@ public class a1 {
         actions.sendKeys("mohammadAMIN").perform();
         wait.until(ExpectedConditions.elementToBeClickable(emailInput));
         actions.click(emailInput).perform();
-        actions.sendKeys("MAHAmmadkdf123@gmail.com").perform();
+        actions.sendKeys("MAHAmmadkdf1254@gmail.com").perform();
         wait.until(ExpectedConditions.elementToBeClickable(passwordInput));
         actions.click(passwordInput).perform();
         actions.sendKeys("myPasssWORD.COM2@").perform();
@@ -61,8 +61,9 @@ public class a1 {
         Select select=new Select(monthDropDOWN);
         wait.until(ExpectedConditions.elementToBeClickable(monthDropDOWN)).click();
         select.selectByVisibleText("12");
-        driver.quit();
+
         Thread.sleep(4000);
+        driver.quit();
 
 
     }
