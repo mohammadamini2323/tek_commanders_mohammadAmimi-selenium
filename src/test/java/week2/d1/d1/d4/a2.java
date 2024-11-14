@@ -22,7 +22,7 @@ public class a2 {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("password"))).sendKeys("mykpakdjkf@!!@");
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("confirmPassword"))).sendKeys("mykpakdjkf@!!@");
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.ant-btn-primary"))).click();
-        Thread.sleep(1000);
+        Thread.sleep(5000);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("email"))).sendKeys("mohammad10912@gmail.com");
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("password"))).sendKeys("mykpakdjkf@!!@");
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.ant-flex >button.ant-btn-primary"))).click();
