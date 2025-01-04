@@ -38,29 +38,39 @@ public class a1 {
         wait.until(ExpectedConditions.elementToBeClickable(nameInput));
         actions.click(nameInput).perform();
         actions.sendKeys("mohammadAMIN").perform();
-        wait.until(ExpectedConditions.elementToBeClickable(emailInput));
+       // wait.until(ExpectedConditions.elementToBeClickable(emailInput));
         actions.click(emailInput).perform();
-        actions.sendKeys("MAHAmmadkdf1254@gmail.com").perform();
-        wait.until(ExpectedConditions.elementToBeClickable(passwordInput));
+        actions.sendKeys("MAHAmmadkdf125aa4@gmail.com").perform();
+       // wait.until(ExpectedConditions.elementToBeClickable(passwordInput));
         actions.click(passwordInput).perform();
         actions.sendKeys("myPasssWORD.COM2@").perform();
-        wait.until(ExpectedConditions.elementToBeClickable(confirmPasswordInput));
+       // wait.until(ExpectedConditions.elementToBeClickable(confirmPasswordInput));
         actions.click(confirmPasswordInput).perform();
         actions.sendKeys("myPasssWORD.COM2@").perform();
-        wait.until(ExpectedConditions.elementToBeClickable(signupBtn));
+        //wait.until(ExpectedConditions.elementToBeClickable(signupBtn));
         actions.click(signupBtn).perform();
         wait.until(ExpectedConditions.urlToBe("https://retail.tekschool-students.com/profile"));
         //NEVER MIND
         WebElement nameinput=driver.findElement(By.cssSelector("#nameInput"));
         wait.until(ExpectedConditions.elementToBeClickable(nameinput));
-        actions.click(nameinput).perform();
-        actions.click(nameinput).perform();
+        actions.doubleClick(nameinput).perform();
+       // actions.click(nameinput).perform();
         actions.keyDown(Keys.BACK_SPACE).perform();
         actions.keyUp(Keys.BACK_SPACE).perform();
+        nameinput.clear();
+        actions.sendKeys("newname").perform();
+        WebElement phoneNumber=driver.findElement(By.id("phoneNumber"));
+        for (char charecter: "1029384756".toCharArray()){
+            actions.sendKeys(String.valueOf(charecter)).perform();
+            Thread.sleep(200);
+        }
+        Thread.sleep(3000);
         WebElement monthDropDOWN=driver.findElement(By.id("expirationMonthInput"));
         Select select=new Select(monthDropDOWN);
         wait.until(ExpectedConditions.elementToBeClickable(monthDropDOWN)).click();
         select.selectByVisibleText("12");
+        WebElement personalUpdateBtn=driver.findElement(By.cssSelector("#personalUpdateBtn"));
+        actions.click(personalUpdateBtn).perform();
 
         Thread.sleep(4000);
         driver.quit();
